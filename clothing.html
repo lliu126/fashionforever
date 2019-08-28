@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<title>Fashion Forever</title>
+<meta charset="UTF-8">
+<meta name="Fashion Forever" content="Test Company Website">
+<link href="http://www.leonbaruch.com/fashionforever/background/icon.png" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("http://www.leonbaruch.com/fashionforever/background/rackclothing.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="http://fashionforever.leonbaruch.com/" class="w3-bar-item w3-button w3-wide">Fashion Forever<sup style="font-size:50%" class="fa fa-trademark"></sup></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="http://fashionforever.leonbaruch.com/#aboutus" class="w3-bar-item w3-button">About</a>
+      <a href="http://fashionforever.leonbaruch.com/clothing.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Collection</a>
+      <a href="http://fashionforever.leonbaruch.com/hotlist.html" class="w3-bar-item w3-button"><i class="fa fa-flash"></i> Inspire</a>
+      <a href="http://fashionforever.leonbaruch.com/#pricing" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> Plans</a>
+      <a href="http://fashionforever.leonbaruch.com/#howitworks" class="w3-bar-item w3-button"><i class="fa fa-gears"></i> How It Works</a>
+      <!--
+      <a href="http://fashionforever.leonbaruch.com/media.html" class="w3-bar-item w3-button"><i class="fa fa-toggle-right"></i> MEDIA</a>
+      -->
+      <a href="http://fashionforever.leonbaruch.com/#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+       <a href="http://fashionforever.leonbaruch.com/faq.html" class="w3-bar-item w3-button"><i class=""></i>FAQ</a>
+      <a href="http://fashionforever.leonbaruch.com/signin.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="http://fashionforever.leonbaruch.com/#aboutus" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="http://fashionforever.leonbaruch.com/#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#clothing" onclick="w3_close()" class="w3-bar-item w3-button">CLOTHING</a>
+  <a href="http://fashionforever.leonbaruch.com/#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PLANS</a>
+  <a href="http://fashionforever.leonbaruch.com/#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px"><br><br>
+    <span class="w3-jumbo w3-hide-small">Collection</span><br>
+    <span class="w3-medium">New Spring styles are here!</span>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br><br><br><br><br><br><br>
+    <p style="float:left"><a href="#women" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Women</a>
+    <a href="#men" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Men</a>
+    <a href="#teens" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Teens</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <div style="clear:both"></div>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i onclick="window.location.href='https://www.instagram.com/FashionForever_subscription/';return false;" class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-youtube w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <div style="clear:both"></div>
+    <i><iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffashionforever.leonbaruch.com%2F&width=106&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="106" height="46" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></i>
+</header>
+
+
+<!-- Clothing Section -->
+<div class="w3-container" style="padding:128px 16px" id="clothing">
+  <h3 class="w3-center">CLOTHING COLLECTIONS</h3>
+  <p class="w3-center w3-large"><i>Samples</i></p>
+<p id="women" class="w3-large w3-center">Women</p>
+<div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style0">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style1">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style2">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style3">
+    </div>
+ </div>
+ <br>
+<div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style0">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style1">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style2">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/women/women8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="style3">
+    </div>
+  </div>
+</div>
+<p id="men" class="w3-large w3-center">Men</p>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/men/express1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slim Plaid Luxury 100% Italian Wool Suit Jacket from EXPRESS">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/men/express3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Plaid Flannel Shirt from EXPRESS">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/men/express2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Extra Slim Burgundy Cotton Sateen Stretch Suit Jacket from EXPRESS">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/men/express4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slim Plaid Button Collar Soft Wash Shirt from EXPRESS">
+    </div>
+  </div>
+ <p id="teens" class="w3-large w3-center">Teens</p>
+ <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="pinstripe sweater">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="red sweater">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="checker shirt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="multi-x shirt">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="adidas track jacket">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="grey matching top & bottom">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fall striped color top">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://fashionforever.leonbaruch.com/teens/teen8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="blue top">
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">We'd love to hear from you! <br> Send us a message</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York City, USA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 (212) 123 - 4567</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: fashionforever@info.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  
+<!-- Image of location/map -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.74019335, -73.98332973364073);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8rZpN3QZMdj1Nw4kLYneAbcbS_MffBZA&callback=myMap"></script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i onclick="window.location.href='https://www.instagram.com/FashionForever_subscription/';return false;" class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Photo credits to <a href="https://www.lordandtaylor.com/Women/shop/_/N-4zteyp/Ne-6ja3o7" title="Lord and Taylor Women" target="_blank" class="w3-hover-text-green">Lord+Taylor</a> and <a href="https://www.express.com/men" title="men business attire" target="_blank" class="w3-hover-text-green">Express</a>
+  
+  </p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

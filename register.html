@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>Fashion Forever</title>
+<meta charset="UTF-8">
+<meta name="Fashion Forever" content="Test Company Website">
+<link href="http://www.leonbaruch.com/fashionforever/background/icon.png" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("http://www.leonbaruch.com/fashionforever/background/rackclothing.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="http://fashionforever.leonbaruch.com/" class="w3-bar-item w3-button w3-wide">Fashion Forever<sup style="font-size:50%" class="fa fa-trademark"></sup></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="http://fashionforever.leonbaruch.com/#aboutus" class="w3-bar-item w3-button">About</a>
+      <a href="http://fashionforever.leonbaruch.com/clothing.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Collection</a>
+      <a href="http://fashionforever.leonbaruch.com/hotlist.html" class="w3-bar-item w3-button"><i class="fa fa-flash"></i> Inspire</a>
+      <a href="http://fashionforever.leonbaruch.com/#pricing" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> Plans</a>
+      <a href="http://fashionforever.leonbaruch.com/#howitworks" class="w3-bar-item w3-button"><i class="fa fa-gears"></i> How It Works</a>
+      <!--
+      <a href="http://fashionforever.leonbaruch.com/media.html" class="w3-bar-item w3-button"><i class="fa fa-toggle-right"></i> MEDIA</a>
+      -->
+      <a href="http://fashionforever.leonbaruch.com/#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+       <a href="http://fashionforever.leonbaruch.com/faq.html" class="w3-bar-item w3-button"><i class=""></i>FAQ</a>
+      <a href="http://fashionforever.leonbaruch.com/signin.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#aboutus" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#cothing" onclick="w3_close()" class="w3-bar-item w3-button">CLOTHING</a>
+  <a href="#plans" onclick="w3_close()" class="w3-bar-item w3-button">PLANS</a>
+  <a href="#howitworks" onclick="w3_close()" class="w3-bar-item w3-button">HOW IT WORKS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h1 class="w3-center">Register</h1>
+  <p class="w3-center w3-large">Thank you for considering Fashion Forever!<br> You're moments away from your first clothing piece and helping the environment.</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p>First Name<input style="width:200px" class="w3-input w3-border" type="text" placeholder="" required name="First Name">
+      </p>
+      
+      <p>Last Name<input style="width:200px"class="w3-input w3-border" type="text" placeholder="" required name="Last Name"></p>
+      <p>E-mail<input style="width:300px"class="w3-input w3-border" type="text" placeholder="" required name="E-mail"></p>
+      <br>
+      <p>Username<input style="width:200px" class="w3-input w3-border" type="text" placeholder="" required name="Username"></p>
+      
+      
+      <p>Password*<input style="width:300px" class="w3-input w3-border" type="text" placeholder="" required name="Password">(*Minimum 6 characters of at least one number and one letter)</p>
+      <p>Confirm Password<input style="width:300px"class="w3-input w3-border" type="text" placeholder="" required name="Confirm Password"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> Submit
+        </button>
+      </p>
+    </form>
+    
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  
+<!-- Image of location/map -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.74019335, -73.98332973364073);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8rZpN3QZMdj1Nw4kLYneAbcbS_MffBZA&callback=myMap"></script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <<i onclick="window.location.href='https://www.instagram.com/FashionForever_subscription/';return false;" class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Thanks to <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3schools</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

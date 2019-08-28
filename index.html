@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<title>Fashion Forever</title>
+<meta charset="UTF-8">
+<meta name="Fashion Forever" content="Test Company Website">
+<link href="http://www.leonbaruch.com/fashionforever/background/icon.png" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("http://www.leonbaruch.com/fashionforever/background/rackclothing.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="http://fashionforever.leonbaruch.com/" class="w3-bar-item w3-button w3-wide">Fashion Forever<sup style="font-size:50%" class="fa fa-trademark"></sup></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="http://fashionforever.leonbaruch.com/#aboutus" class="w3-bar-item w3-button">About</a>
+      <a href="http://fashionforever.leonbaruch.com/clothing.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Collection</a>
+      <a href="http://fashionforever.leonbaruch.com/hotlist.html" class="w3-bar-item w3-button"><i class="fa fa-flash"></i> Inspire</a>
+      <a href="http://fashionforever.leonbaruch.com/#pricing" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> Plans</a>
+      <a href="http://fashionforever.leonbaruch.com/#howitworks" class="w3-bar-item w3-button"><i class="fa fa-gears"></i> How It Works</a>
+      <a href="http://fashionforever.leonbaruch.com/#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+       <a href="http://fashionforever.leonbaruch.com/faq.html" class="w3-bar-item w3-button"><i class=""></i>FAQ</a>
+      <a href="http://fashionforever.leonbaruch.com/signin.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Sign In</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#aboutus" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#cothing" onclick="w3_close()" class="w3-bar-item w3-button">CLOTHING</a>
+  <a href="#plans" onclick="w3_close()" class="w3-bar-item w3-button">PLANS</a>
+  <a href="#howitworks" onclick="w3_close()" class="w3-bar-item w3-button">HOW IT WORKS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px"><br><br>
+    <span class="w3-jumbo w3-hide-small">Fashion Forever</span><br>
+    <span class="w3-medium">Wish you had unlimited outfits?</span>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
+    <p> <a href="http://fashionforever.leonbaruch.com/register.html" class="w3-button w3-red w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join Now</a>
+    <a href="#aboutus" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn More</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <div style="clear:both"></div>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i onclick="window.location.href='https://www.instagram.com/FashionForever_subscription/';return false;" class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-youtube w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <div style="clear:both"></div>
+    <i><iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffashionforever.leonbaruch.com%2F&width=106&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="106" height="46" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></i> 
+    
+</header>
+
+<!-- About Us Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="aboutus">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h2>ABOUT US</h2>
+      <h5>"One person's temporary is another person's treat."</h5><br>
+      Fashion Forever is a clothing rental subscription service based in New York City. We discovered there is an issue with wasteful production of clothing that are unused, burned, or destroyed from lack of finding its rightful usability.
+<br><br>Our mission is to fill and bridge the gap between Fashion and Sustainability. The fashion industry is always evolving and changing. Therefore it's a never-ending cycle, struggling to adapt to the latest trend. What about the ones left behind? Instead of trashing out, donating (high-value items), passing down to younger generations, or piling up a mountain of unworn clothes, our tactic enables users to keep a sustainable cycle running. 
+<br><br>We strongly believe in doing social good. We give back to the community by providing directly to donation center that distributes directly to those in need such as victims of abusive relationships.<br><br>
+    Let's help make the world a better place, together.
+    
+      <p><a href="http://fashionforever.leonbaruch.com/clothing.html" class="w3-button w3-green"><i class="fa fa-th"></i> Explore the Collection</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="http://www.leonbaruch.com/fashionforever/greenshirt.png" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+
+<!-- Statistic Section -->
+<div class="w3-white w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col 110 w3-center">
+      <h2>Did you know?</h2>
+      <hr>
+      <img style="float:left;" src="http://fashionforever.leonbaruch.com/stats/stat2.png">
+      <img style="float:right;" src="http://fashionforever.leonbaruch.com/stats/stat5.png">
+      <img style="float:center;" src="http://fashionforever.leonbaruch.com/stats/stat4.png">
+      <img style="float:center;" src="http://fashionforever.leonbaruch.com/stats/stat1.png">
+      <p style="font-size:75%;float:center">(Based on an alliance data properity consumer panel of credit cardholers: "What's in her closet?", 2015)</p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<p class="w3-large w3-center"><u>Why us?</u></p>
+<div class="w3-center w3-round-large">
+<h5>Celebrity Jane shares why you should invest in Fashion Forever today!</h5>
+<video width="25%" height="25%" controls poster="http://leonbaruch.com/fashionforever/pickus.jpg">
+<source src="http://leonbaruch.com/fashionforever/media/whyus.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+<hr>
+
+
+<!-- How It Works Section -->
+<div class="w3-container" style="padding:128px 16px" id="howitworks">
+  <h3 class="w3-center"><u>HOW IT WORKS</u></h3>
+  <p class="w3-center w3-large">4 easy steps</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-calendar w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Step 1:</p>
+      <p>Choose a <a href="http://fashionforever.leonbaruch.com/#pricing" >subscription plan</a>.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Step 2:</p>
+      <p>Select your 3-5 items from <a href="http://fashionforever.leonbaruch.com/clothing.html">collections</a></p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-truck w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Step 3:</p>
+      <p>Recieve your items.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-refresh w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Step 4:</p>
+      <p>Send back & repeat 2.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-black" style="padding:128px 16px" id="pricing">
+  <h3>MONTHLY SUBSCRIPTION PLANS</h3>
+  <p class="w3-large">Choose a plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-pale-green w3-xlarge w3-padding-32">Starter</li>
+        <li class="w3-padding-16">Access to over <b>20,000</b> Designer Brands</li>
+        <li class="w3-padding-16"><b>1 box</b> per month</li>
+        <li class="w3-padding-16"><b>3 pieces</b> per box</li>
+        <li class="w3-padding-16"><b>1 box</b> swap </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 69</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-pale-green w3-padding-24">
+          <button class="w3-button w3-pale-green w3-padding-large">Go Starter</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-green w3-xlarge w3-padding-48">Unlimited <div style="font-size:55%;">(Most Popular!)</div></li>
+        <li class="w3-padding-16">Access to over <b>25,000</b> Designer Brands</li>
+        <li class="w3-padding-16"><b>Unlimited</b> boxes per month</li>
+        <li class="w3-padding-16"><b>5 pieces </b> per box</li>
+        <li class="w3-padding-16"><b>Unlimited</b> box swaps</li>
+          <h2 class="w3-wide">$ 99</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-green w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Go Unlimited</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-yellow w3-xlarge w3-padding-32">Unlimited PRO</li>
+        <li class="w3-padding-16">Access to all <b>30,000+</b> Designer Brands</li>
+        <li class="w3-padding-16"><b>Unlimited</b> boxes per month</li>
+        <li class="w3-padding-16"><b>5 pieces</b> per box</li>
+        <li class="w3-padding-16"><b>Unlimited</b> box swaps</li>
+          <h2 class="w3-wide">$ 129</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-yellow w3-padding-24">
+          <button class="w3-button w3-yellow w3-padding-large">Go Unlimited PRO</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-center" style="margin-padding: 50px 20px 50px 20px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The people behind the scenes</p>
+  <div class="w3-row-padding" style="margin-top:64px;">
+    <div class="w3-col l4 m6">
+      <div style="float:left" class="w3-card">
+        <img src="http://www.leonbaruch.com/fashionforever/team/anna.jpg" alt="Ganna" style="display: block;margin-left: auto;margin-right: auto;width:50%;">
+        <div class="w3-container">
+          <h3 style="text-align:center;">Anna</h3>
+          <p class="w3-opacity">Chief Marketing Officer</p>
+          <p>Ganna, aka Anna, is the rockstar that makes sure our product is seen by all who need to see if. She is the head of sales, product development, and all things marketing.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:vasiuk123@gmail.com'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div style="float:left" class="w3-card">
+        <img src="http://www.leonbaruch.com/fashionforever/team/bailey.png" alt="Bailey" style="display: block;margin-left: auto;margin-right: auto;width:50%;">
+        <div class="w3-container w3-center">
+          <h3 style="text-align:center;">Bailey</h3>
+          <p class="w3-opacity">Chief Information Officer</p>
+          <p>Bailey is our IT guru.  He works with traditional information technology and computer systems that support our current and next level goals.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:jasonyong341@gmail.com'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div style="float:left" class="w3-card">
+        <img src="http://www.leonbaruch.com/fashionforever/team/chevel.png" alt="Chevel" style="display: block;margin-left: auto;margin-right: auto;width:50%;">
+        <div class="w3-container w3-center">
+          <h3 style="text-align:center;">Chevel</h3>
+          <p class="w3-opacity">Chief Financial Officer</p>
+          <p>Chevel is our numbers wizard.  She manages our company’s financial risk and helps us compile our data analysis, financial planning and maintains all our record keeping.  
+</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:chevelnelson@gmail.com'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+   
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="http://www.leonbaruch.com/fashionforever/team/jenebou.png" alt="Jenebou" style="display: block;margin-left: auto;margin-right: auto;width:50%;">
+        <div class="w3-container">
+          <h3 style="text-align:center;">Jenebou</h3>
+          <p class="w3-opacity">Public Relations Officer</p>
+          <p>Jenebou is our suave and convincing voice.  She is the head of communications, public relations,and public affairs for our company.
+</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:jenebou.sylla@gmail.com'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div style="float:left" class="w3-card">
+        <img src="http://www.leonbaruch.com/fashionforever/team/leon.png" alt="Leon" style="display: block;margin-left: auto;margin-right: auto;width:50%;">
+        <div class="w3-container">
+          <h3 style="text-align:center;">Leon</h3>
+          <p class="w3-opacity">Chief Operating Officer</p>
+          <p>Leon is the one that keeps this well oiled machine running.  He is responsible for the day to day operations of the organization.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:leonliu126@gmail.com'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div style="float:left" class="w3-card">
+        <img src="http://www.leonbaruch.com/fashionforever/team/maho.png" alt="Maho" style="display: block;margin-left: auto;margin-right: auto;width:50%;">
+        <div class="w3-container">
+          <h3 style="text-align:center">Maho</h3>
+          <p class="w3-opacity">Chief Creative Officer</p></p>
+          <p>Maho is the eye that makes our visions a reality.  She is responsible for the overall look and feel of marketing, media, and branding associated with our company.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:df6maho@gmail.com'"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">We'd love to hear from you! <br> Send us a message</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York City, USA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 (212) 123 - 4567</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: fashionforever@info.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+  
+<!-- Image of location/map -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.74019335, -73.98332973364073);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8rZpN3QZMdj1Nw4kLYneAbcbS_MffBZA&callback=myMap"></script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i onclick="window.location.href='https://www.instagram.com/FashionForever_subscription/';return false;" class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Website Developed by <a href="http://leonbaruch.com/aboutme.html" title="About Leon" target="_blank" class="w3-hover-text-green">Leon</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
