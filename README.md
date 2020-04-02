@@ -1,7 +1,7 @@
 # fashion_forever
 Sustainable fashion; a clothing rental subscription service
 
-http://fashionforever.leonbaruch.com/
+http://leonbaruch.com/
 
 The webpage served as the main prototype for the E-Business Technologies course group project.
 Throughout the course, as a team, we mock development of a start up from an idea to a deliverable pitch to investors by the end of course.
